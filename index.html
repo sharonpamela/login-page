@@ -5,29 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css" >
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" >
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" >
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
+
 </head>
 <body>
-    <nav class="container">       
-        <div><span>Branding</span></div>
-        <div class="login"><a href="#">Login</a></li></div>
-        <div><a href="#">Sign Up</a></div>
-    </nav>
-  
+    <div class="wrapper">
+        <nav>       
+            <ul class="navContainer">
+                <li><span>Branding</span></li>
+                <li class="login"><a href="#">Login</a></li>
+                <li><a href="#">Sign Up</a></li>
+            </ul>     
+        </nav>
 
-    <div>
-        <form>
-            <input type="text" placeholder="username" name="username" size="15" required><br>
-            <input type="text" placeholder="password" name="password" size="15" required><br>
-            <input type="submit" value="Login">
-            <label>
-                <input type="checkbox" checked="checked" name="remember"> Remember me
-            </label>
+        <form class="formContainer">
+            <!-- <input type="image" src="images/email-outline.png" alt="username-icon"> -->
+            <input class="username" type="text" placeholder="username" name="username" size="15" required>
+            <!-- <input type="image" src="images/email-outline.png" alt="password-icon"> -->
+            <input class="password" type="password" placeholder="password" name="password" size="15" required>
+            <input class="loginButton" type="submit" value="Login">
+            <label class="rememberMeCheck">
+                <input type="checkbox" name="remember"> Remember me
+            </label>       
         </form>
         
-        <div>
-            <span class="psw">Forgot <a href="#">password?</a></span>
-        </div>
+        <span class="forgotPsw">Forgot &nbsp  <a href="#"> password?</a></span>
     </div>
+    <footer class=footer>
+        <p>" A journey of a thousand miles begins with a single step. "</p>
+    </footer>
+
 </body>
 </html>
